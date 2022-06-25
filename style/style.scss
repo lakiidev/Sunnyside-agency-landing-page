@@ -157,12 +157,12 @@ header
         justify-content: center;
         align-items: center;
     }
-    h1,p,a
+    h2,p,a
     {
         font-family: $fancy-text;
         color: $blue-desaturated;
     }
-    h1
+    h2
     {
         align-self: flex-start;
         font-size: 5rem;
@@ -232,7 +232,7 @@ header
         align-items: center;
         text-align: center;
         padding-bottom: 4rem;
-        h1
+        h2
         {
             font-size: 4rem;
             font-family: $fancy-text;
@@ -246,7 +246,7 @@ header
     }
     .graphic-text
     {
-        h1,p
+        h2,p
         {
            color: $cyan; 
         }
@@ -254,7 +254,7 @@ header
     }
     .photo-text
     {
-        h1,p
+        h2,p
         {
            color: $blue-dark; 
         }
@@ -275,7 +275,7 @@ header
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1
+    h2
     {
         text-transform: uppercase;
         color: $grayish-dark-blue;
@@ -468,7 +468,7 @@ footer
         }
         .transform-text,.stand-text
         {
-            h1
+            h2
             {
                  align-self: center;
             }

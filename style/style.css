@@ -181,12 +181,12 @@ header .arrow {
           align-items: center;
 }
 
-.services h1, .services p, .services a {
+.services h2, .services p, .services a {
   font-family: "Fraunces", serif;
   color: #23303e;
 }
 
-.services h1 {
+.services h2 {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 5rem;
@@ -270,7 +270,7 @@ header .arrow {
   padding-bottom: 4rem;
 }
 
-.services .graphic-text h1, .services .photo-text h1 {
+.services .graphic-text h2, .services .photo-text h2 {
   font-size: 4rem;
   font-family: "Fraunces", serif;
   -ms-flex-item-align: center;
@@ -283,11 +283,11 @@ header .arrow {
   font-family: "Barlow", sans-serif;
 }
 
-.services .graphic-text h1, .services .graphic-text p {
+.services .graphic-text h2, .services .graphic-text p {
   color: #25564b;
 }
 
-.services .photo-text h1, .services .photo-text p {
+.services .photo-text h2, .services .photo-text p {
   color: #19536b;
 }
 
@@ -313,7 +313,7 @@ header .arrow {
           align-items: center;
 }
 
-.testimonials h1 {
+.testimonials h2 {
   text-transform: uppercase;
   color: #818498;
   font-family: "Fraunces", serif;
@@ -519,7 +519,7 @@ footer a:hover img {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .services .transform-text h1, .services .stand-text h1 {
+  .services .transform-text h2, .services .stand-text h2 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
