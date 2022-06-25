@@ -18,8 +18,8 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ### Screenshot
 
-![Desktop Screenshot](./screenshot-dektop.jpg)
-![Mobile Screenshot](./screenshot-mobile.jpg)
+![Desktop Screenshot](./screenshot-dektop.png)
+![Mobile Screenshot](./screenshot-mobile.png)
 
 ### Links
 
