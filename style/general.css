@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --lineX: 0%;
+  --opacityLine: 0;
+  --doorHeight: 50vh;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  overflow: hidden;
+}
+header nav {
+  margin-top: 7vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header nav ul {
+  display: flex;
+  gap: 5rem;
+}
+header nav ul li {
+  list-style: none;
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+}
+header nav ul li a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+header nav ul li:last-child a {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-family: 400;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(212deg, 27%, 19%);
+  padding: 2rem 3rem 2rem 3rem;
+  border-radius: 10rem;
+}
+header nav ul li:last-child a:hover {
+  color: hsl(0deg, 0%, 100%);
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+header nav .hamburger {
+  display: none;
+}
+
+.doors {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+}
+.doors .door1,
+.doors .door2 {
+  background-color: hsl(167deg, 40%, 24%);
+  height: var(--doorHeight);
+  width: 100%;
+}
+.doors .door2 {
+  position: absolute;
+  bottom: 0;
+}
+
+footer {
+  background-color: hsl(169deg, 43%, 69%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+footer .logo {
+  width: 15rem;
+  padding-top: 10rem;
+  align-self: center;
+}
+footer ul {
+  padding-top: 4rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+footer ul a {
+  font-size: 2rem;
+  color: hsl(168deg, 34%, 41%);
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+}
+footer nav {
+  padding-bottom: 10rem;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-bottom: 7rem;
+}
+footer a:hover {
+  transition: 0.3s;
+  color: hsl(0deg, 0%, 100%);
+}
+footer a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 780px) {
+  html {
+    text-align: center;
+  }
+  header nav {
+    position: relative;
+  }
+  header h1 {
+    font-size: 5rem;
+  }
+  header .logo {
+    justify-self: center;
+    align-self: flex-start;
+  }
+  header .hamburger {
+    position: relative;
+    display: block !important;
+    width: 4rem;
+  }
+  header ul {
+    visibility: hidden;
+    position: absolute;
+    flex-direction: column;
+    gap: 7rem;
+    z-index: 3;
+    top: 10rem;
+    width: 100%;
+    background-color: white;
+    padding-top: 7rem;
+    padding-bottom: 10em;
+  }
+  header ul li a {
+    font-size: 2rem;
+    color: hsl(232deg, 10%, 55%) !important;
+  }
+  header ul li:last-child {
+    margin-top: 2rem !important;
+  }
+  header ul li:last-child a {
+    color: hsl(212deg, 27%, 19%) !important;
+    background-color: hsl(51deg, 100%, 49%) !important;
+  }
+  header ul::after {
+    content: "";
+    position: absolute !important;
+    right: 0;
+    top: -3.6rem;
+    border-top: 1.8rem solid transparent;
+    border-bottom: 1.8rem solid hsl(0deg, 0%, 100%);
+    border-left: 1.8rem solid transparent;
+    border-right: 1.8rem solid hsl(0deg, 0%, 100%);
+  }
+}/*# sourceMappingURL=general.css.map */

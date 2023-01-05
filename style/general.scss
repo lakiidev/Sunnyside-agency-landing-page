@@ -1,0 +1,189 @@
+$red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$cyan: hsl(167, 40%, 24%); //graphic design text
+$blue-dark: hsl(198, 62%, 26%); //photography text
+$dark-cyan: hsl(168, 34%, 41%); //footer
+$cyan-light: hsl(169, 43%, 69%);
+$blue-light: #3dbeff;
+
+$blue-desaturated: hsl(212, 27%, 19%);
+$grayish-dark: hsl(213, 9%, 39%);
+$grayish-dark-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&display=swap");
+$fancy-text: "Fraunces", serif;
+$normal-text: "Barlow", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --lineX: 0%;
+  --opacityLine: 0;
+  --doorHeight: 50vh;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  position: relative;
+}
+header {
+  overflow: hidden;
+  nav {
+    margin-top: 7vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    ul {
+      display: flex;
+      gap: 5rem;
+      li {
+        list-style: none;
+        font-size: 2rem;
+        font-family: $normal-text;
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+      li:last-child {
+        a {
+          text-transform: uppercase;
+          font-family: $fancy-text;
+          font-family: 400;
+          background-color: $white;
+          color: $blue-desaturated;
+          padding: 2rem 3rem 2rem 3rem;
+          border-radius: 10rem;
+        }
+        a:hover {
+          color: $white;
+          transition: 0.3s;
+          background-color: rgba($white, 0.4);
+        }
+      }
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+}
+.doors {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  .door1,
+  .door2 {
+    background-color: $cyan;
+    height: var(--doorHeight);
+    width: 100%;
+  }
+  .door2 {
+    position: absolute;
+    bottom: 0;
+  }
+}
+footer {
+  background-color: $cyan-light;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .logo {
+    width: 15rem;
+    padding-top: 10rem;
+    align-self: center;
+  }
+  ul {
+    padding-top: 4rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    a {
+      font-size: 2rem;
+      color: $dark-cyan;
+      text-decoration: none;
+      font-family: $normal-text;
+    }
+  }
+  nav {
+    padding-bottom: 10rem;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-bottom: 7rem;
+  }
+  a:hover {
+    transition: 0.3s;
+    color: $white;
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+@media (max-width: 780px) {
+  html {
+    text-align: center;
+  }
+  header {
+    nav {
+      position: relative;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    .logo {
+      justify-self: center;
+      align-self: flex-start;
+    }
+    .hamburger {
+      position: relative;
+      display: block !important;
+      width: 4rem;
+    }
+    ul {
+      visibility: hidden;
+      position: absolute;
+      flex-direction: column;
+      gap: 7rem;
+      z-index: 3;
+      top: 10rem;
+      width: 100%;
+      background-color: white;
+      padding-top: 7rem;
+      padding-bottom: 10em;
+      li {
+        a {
+          font-size: 2rem;
+          color: $grayish-dark-blue !important;
+        }
+      }
+
+      li:last-child {
+        margin-top: 2rem !important;
+        a {
+          color: $blue-desaturated !important;
+          background-color: $yellow !important;
+        }
+      }
+    }
+    ul::after {
+      content: "";
+      position: absolute !important;
+      right: 0;
+      top: -3.6rem;
+      border-top: 1.8rem solid transparent;
+      border-bottom: 1.8rem solid $white;
+      border-left: 1.8rem solid transparent;
+      border-right: 1.8rem solid $white;
+    }
+  }
+}

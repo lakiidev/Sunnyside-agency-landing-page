@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.svg"
+    />
+    <link rel="stylesheet" href="./style/contact.css" />
+    <title>Sunnyside agency | Contact</title>
+  </head>
+  <body>
+    <div class="doors">
+      <div class="door1"></div>
+      <div class="door2"></div>
+    </div>
+    <header id="header">
+      <nav>
+        <a href="./index.html"
+          ><img src="./images/logo.svg" alt="" class="logo"
+        /></a>
+        <ul class="navLinks">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./contact.html">Conatct</a></li>
+        </ul>
+        <img src="./images/icon-hamburger.svg" alt="" class="hamburger" />
+      </nav>
+      <div class="hero">
+        <img src="./images/contact/phone-contact.png" alt="" />
+        <div class="about-text">
+          <h1>Contact</h1>
+          <p>Reach out and explain your ideas</p>
+        </div>
+      </div>
+    </header>
+    <section class="contact-form">
+      <h2>Let’s start a conversation!</h2>
+      <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
+        <div class="inputs">
+          <div class="credentials">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="text">
+            <label for="">Tell us about your project</label>
+            <textarea id="message" rows="4" required></textarea>
+          </div>
+        </div>
+        <button type="submit" id="btn">
+          <h3>I’m ready</h3>
+          <img src="./images/contact/arrow.png" alt="" id="arrow" />
+        </button>
+      </form>
+    </section>
+    <footer>
+      <img src="./images/logo-footer.svg" alt="" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+        </ul>
+      </nav>
+      <div class="social-icons">
+        <a href="#"><img src="./images/icon-facebook.svg" alt="" /></a>
+        <a href="#"> <img src="./images/icon-instagram.svg" alt="" /></a>
+        <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+        <a href="#"> <img src="./images/icon-pinterest.svg" alt="" /></a>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/animations/contact.js" type="module"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("5ZI9mb9qIyxauEuql");
+      })();
+    </script>
+  </body>
+</html>
