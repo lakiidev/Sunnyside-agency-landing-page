@@ -4,7 +4,7 @@
 [Mobile Screenshot](./screenshot-mobile.png)
 
 ### Links
-- Live Site URL: [Live site](https://lakiidev.github.io/Sunnyside-agency-landing-page/)
+- Live Site URL: [Live site](https://lakiidev.github.io/Sunnyside-agency-page/)
 
 
 ### Built with
